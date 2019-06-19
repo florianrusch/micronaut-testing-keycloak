@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: mirconaut.testing.keycloak
+---
+testFramework: junit
+sourceLanguage: java

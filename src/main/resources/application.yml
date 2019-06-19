@@ -1,0 +1,26 @@
+micronaut:
+  application:
+    name: mirconaut-testing-keycloak
+
+  security:
+    enabled: true
+    oauth2:
+      enabled: true
+      default-provider: keycloak
+      clients:
+        keycloak:
+          client-secret: 'xxx'
+          client-id: 'xxx'
+          openid:
+            issuer: 'http://xxx.xxx.xxx.xxx/auth/realms/dev-fr'
+
+    token:
+      jwt:
+        enabled: true
+        cookie:
+          enabled: true
+
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
